@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Comportible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BOHO SHOP</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <div class="container-fluid">
+                <!--Create a heading section-->
+                <div id="heading">
+                    <h2>SHOP</h2>
+                </div>
+                <!--create nav bar-->
+                <nav role="navigation" class="navbar navbar-default" id="mynavBar">
+                    <div>
+                        <div class="navbar-header">
+                            <a href="#"><img src="images/logo.png" id="logo"></a>
+                            <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                                <span class="sr-only">Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse" id="navbarCollapse">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="#">HOME</a></li>
+                                <li class="active"><a href="#">SHOP</a></li>
+                                <li><a href="#">DINING</a></li>
+                                <li><a href="#">BEDROOMS</a></li>
+                                <li><a href="#">LIGHTING</a></li>
+                                <li><a href="#">OFFICE</a></li>
+                                <li><a href="#">ACCESORIES</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                            <div class="nav navbar-nav navbar-right">
+                                <div class="signinBag">
+                                    <img id="signin" src="images/sign%20in.png">
+                                    <a href="#"> Sign In</a>
+                                </div>
+                                <div class="signinBag">
+                                    <div id="bag">
+                                        <span id="bagValue">0</span>
+                                    </div>
+                                    <a href="#">My Bag</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </nav>
+                <!--Content section-->
+                <div class="container-fluid" id="content-section">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="sidebar">
+                                <div class="sidebar-heading">
+                                    <h3>PRODUCT FILTER</h3>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="category">Product Category</label>
+                                        <select class="form-control" id="category">
+                                            <option class="active">All</option>
+                                            <option>Bed</option>
+                                            <option>Chair</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="type">Product Type</label>
+                                        <select class="form-control" id="type">
+                                            <option class="active">Select Type</option>
+                                            <option>Normal</option>
+                                            <option>Special</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group borderbtm">
+                                        <label for="brand">Product Brand</label>
+                                        <select class="form-control" id="brand">
+                                            <option class="active">Select Type</option>
+                                            <option>First class</option>
+                                            <option>Second class</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="price">
+                                        <label for="minSlider">Min. Price: </label>
+                                        <input type="text" id="minprice" class="priceinput" value="$2899">
+                                        <div id="minSlider"></div>
+                                        <p>Range<span class="minrange">$120</span><span class="maxrange">$9999</span></p>
+                                    </div>
+                                    <div class="price borderbtm">
+                                        <label for="maxSlider">Min. Price: </label>
+                                        <input type="text" id="maxprice" class="priceinput" value="$7999">
+                                        <div id="maxSlider"></div>
+                                        <p>Range<span class="minrange">$120</span><span class="maxrange">$9999</span></p>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="Colour">Colour</label>
+                                        <select class="form-control" id="Colour">
+                                            <option class="active">Select Colour</option>
+                                            <option>Black</option>
+                                            <option>Blue</option>
+                                            <option>Red</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                        <a href="#" class="btn btn-default" id="reset">Reset</a>
+                                        <a href="#" class="btn btn-default active" id="Filter">Filter</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sidebar">
+                                <div class="sidebar-heading">
+                                    <h3>REATED PRODUCTS</h3>
+                                </div>
+                                <div class="sidebar-item">
+                                    <h2>ORANGE SOFA ITEM</h2>
+                                    <img class="sofa-item" src="images/orangesofa.png">
+                                    <p>$499.99</p>
+                                    <img class="star" src="images/5star.png">
+                                    <img class="hotsale" src="images/hotbadge1.png">
+                                </div>
+                                <div class="sidebar-item">
+                                    <h2>PURPLE SOFA ITEM</h2>
+                                    <img class="sofa-item" src="images/perplesofa.png">
+                                    <p><span class="left"><s>$499.99</s></span><span class="right">$499.99</span></p>
+                                    <img class="star" src="images/5star.png">
+                                    <img class="hotsale" src="images/salebadge1.png">
+                                </div>
+                                <div class="sidebar-item">
+                                    <h2>BLACK SOFA ITEM</h2>
+                                    <img class="sofa-item" src="images/blacksofa.png">
+                                    <p>$499.99</p>
+                                    <img class="star" src="images/5star.png"> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="search-sort row">
+                                <div class="search col-sm-12 col-sm-6 col-md-6">
+                                    <p>SHOWING 1-12 OF 999 RESULTS</p>
+                                </div>
+                                <div class="sort col-xs-12 col-sm-4 col-lg-3">
+                                    <label for="sort">SHORT BY:</label>
+                                    <select id="sort" class="form-control">
+                                            <option class="active">DEFAULT</option>
+                                            <option>A-Z</option>
+                                            <option>1-9</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!Sofa item slider>
+                            <div id="sofaitemslider">
+                                <img class="hot" src="images/hotbadge.png">
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <div class="iconprev">
+                                            <a class="left carousel-control" data-slide="prev">
+                                             <img src="images/prev%20icon.png">
+                                             <span class="sr-only">Previous</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="myCarousel1" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/redsofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/bluesofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/greensofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/pinksofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/graysofa.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="myCarousel2" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/bluesofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/greensofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/pinksofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/graysofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/redsofa.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="myCarousel3" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/greensofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/pinksofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/graysofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/redsofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/bluesofa.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="myCarousel4" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/pinksofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/graysofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/redsofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/bluesofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/greensofa.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="myCarousel5" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/graysofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/redsofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/bluesofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/greensofa.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/pinksofa.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <div class="iconnxt">
+                                            <a class="right carousel-control" data-slide="next">
+                                                <img src="images/nexticon.png">
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <!-Chair item slider->
+                            <div id="chairitemslider">
+                                <img class="sale" src="images/salebadge.png">
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <div class="chairiconprev">
+                                            <a class="left carousel-control" data-slide="prev">
+                                             <img src="images/prev%20icon.png">
+                                             <span class="sr-only">Previous</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="chairCarousel1" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="chairCarousel2" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="chairCarousel3" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="chairCarousel4" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                        <div class="carousel slide" id="chairCarousel5" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="images/chairitem.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <div class="chairiconnxt">
+                                            <a class="right carousel-control" data-slide="next">
+                                                <img src="images/nexticon.png">
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-content column->
+                            <div class="row column-sec">
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE BED ITEM</h2>
+                                        <img class="product1" src="images/bed.png">
+                                        <p>$529.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show1"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard1">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE ITEM</h2>
+                                        <img class="product2" src="images/box.png">
+                                        <p>$249.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show2"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        
+                                        <div class="showcard" id="showcard2">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE TABLE ITEM</h2>
+                                        <img class="product3" src="images/table.png">
+                                        <p>$179.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show3"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard3">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row column-sec">
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE BED ITEM</h2>
+                                        <img class="product1" src="images/bed.png">
+                                        <p>$529.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show4"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard4">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE ITEM</h2>
+                                        <img class="product2" src="images/box.png">
+                                        <p>$249.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show5"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard5">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE TABLE ITEM</h2>
+                                        <img class="product3" src="images/table.png">
+                                        <p>$179.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show6"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard6">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row column-sec column-last">
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE BED ITEM</h2>
+                                        <img class="product1" src="images/bed.png">
+                                        <p>$529.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show7"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard7">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE ITEM</h2>
+                                        <img class="product2" src="images/box.png">
+                                        <p>$249.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show8"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard8">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="productitem">
+                                        <h2>SAMPLE TABLE ITEM</h2>
+                                        <img class="product3" src="images/table.png">
+                                        <p>$179.99</p>
+                                        <img src="images/5star.png">
+                                        <p class="buttons">
+                                            <a href="#" class="btn productbtn1"><img src="images/eye.png"></a>
+                                            <a href="#" class="btn productbtn2" id="show9"><img src="images/bagicon.png"></a>
+                                        </p>
+                                        <div class="showcard" id="showcard9">
+                                            <h2>ADD TO CART</h2>
+                                            <span class="card-arrow"><img src="images/arrow.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Pagination-->
+                            <div id="pagination">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="previous">
+                                            <span aria-hidden="true"><img src="images/leftangle.png"></span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">.</a></li>
+                                    <li><a href="#">.</a></li>
+                                    <li><a href="#">.</a></li>
+                                    <li><a href="#">56</a></li>
+                                    <li><a href="#">57</a></li>
+                                    <li><a href="#">58</a></li>
+                                    <li>
+                                        <a href="#" aria-label="next">
+                                            <span aria-hidden="true"><img src="images/rightangle.png"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Subscribe email section-->
+                <div class="container-fluid" id="subscribe-email">
+                    <div class="jumbotron">
+                        <h1>SUBSCRIBE EMAIL</h1>
+                        <p>GET LATEST NEWS & UPDATE FROM BOHO</p>
+                        <form role="subscribe">
+                            <div class="input-group">
+                                <label for="submit" class="sr-only">Email</label>
+                                <input type="email" id="submit" class="form-control" placeholder="Type your e-mail address here">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-input"><img src="images/subscribe.png"></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <!--contact section-->
+        <div id="contact">
+            <div class="container-fluid">
+                <div class="container-fluid contact-bg">
+                    <div class="row">
+                        <div class="col-sm-3 col-contact">
+                            <div id="logo">
+                                <img src="images/bohologo.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-contact" id="col-link">
+                            <h3>QUICK LINK</h3>
+                            <ul id="link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-contact">
+                            <h3>FAST AND SECURE SHIPPING</h3>
+                            <ul id="trust">
+                                <li><img src="images/secure.png"></li>
+                                <li><img src="images/ups.png"></li>
+                                <li><img src="images/fedex.png"></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 col-contact">
+                            <h3>CONTACT US</h3>
+                            <div class="contact">
+                                <img src="images/phone.png">
+                                <p id="phone">702-886-0242</p>
+                            </div>
+                            <div class="contact">
+                                <img src="images/location.png">
+                                <p>7650 Dean Martin Suite 102 Las Vegas,<br>
+                                NV 89139 United States</p>
+                            </div>
+                            <img id="map" src="images/map.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Create Footer section-->
+        <div id="footer">
+            <div class="container-fluid">
+                <p>&copy;Copyright 2017. BOHO Furniture Gallery - All rights reserved</p>
+            </div>
+        </div>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="shop.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
